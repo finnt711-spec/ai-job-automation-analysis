@@ -1,0 +1,441 @@
+{
+  "careers": [
+    "Cybersecurity Analyst",
+    "Marketing Specialist",
+    "AI Researcher",
+    "Sales Manager",
+    "UX Designer",
+    "HR Manager",
+    "Product Manager",
+    "Software Engineer",
+    "Data Scientist",
+    "Operations Manager"
+  ],
+  "automation_risk_overall": {
+    "Medium": 173,
+    "High": 169,
+    "Low": 158
+  },
+  "career_data": {
+    "Cybersecurity Analyst": {
+      "skills": {
+        "Cybersecurity": 10,
+        "UX/UI Design": 9,
+        "Machine Learning": 7,
+        "Python": 5,
+        "Marketing": 5,
+        "Project Management": 5,
+        "JavaScript": 4,
+        "Sales": 4,
+        "Communication": 3,
+        "Data Analysis": 3
+      },
+      "industry": {
+        "Entertainment": 8,
+        "Healthcare": 8,
+        "Education": 7,
+        "Telecommunications": 7,
+        "Technology": 6,
+        "Manufacturing": 6,
+        "Energy": 5,
+        "Transportation": 3,
+        "Retail": 3,
+        "Finance": 2
+      },
+      "workplace": {
+        "Yes": 34,
+        "No": 21
+      },
+      "automation_risk": {
+        "High": 23,
+        "Low": 21,
+        "Medium": 11
+      },
+      "growth_projection": {
+        "Stable": 22,
+        "Decline": 19,
+        "Growth": 14
+      },
+      "avg_salary": 89429.06,
+      "total_count": 55
+    },
+    "Marketing Specialist": {
+      "skills": {
+        "Python": 10,
+        "Marketing": 8,
+        "Sales": 6,
+        "Communication": 6,
+        "JavaScript": 4,
+        "UX/UI Design": 4,
+        "Data Analysis": 4,
+        "Cybersecurity": 3,
+        "Project Management": 2,
+        "Machine Learning": 1
+      },
+      "industry": {
+        "Retail": 9,
+        "Finance": 6,
+        "Manufacturing": 6,
+        "Energy": 6,
+        "Technology": 5,
+        "Healthcare": 5,
+        "Education": 4,
+        "Telecommunications": 3,
+        "Entertainment": 3,
+        "Transportation": 1
+      },
+      "workplace": {
+        "Yes": 25,
+        "No": 23
+      },
+      "automation_risk": {
+        "Medium": 21,
+        "High": 17,
+        "Low": 10
+      },
+      "growth_projection": {
+        "Decline": 23,
+        "Stable": 14,
+        "Growth": 11
+      },
+      "avg_salary": 90961.15,
+      "total_count": 48
+    },
+    "AI Researcher": {
+      "skills": {
+        "JavaScript": 9,
+        "Python": 9,
+        "Sales": 7,
+        "Cybersecurity": 5,
+        "UX/UI Design": 4,
+        "Marketing": 4,
+        "Data Analysis": 4,
+        "Communication": 4,
+        "Project Management": 3,
+        "Machine Learning": 2
+      },
+      "industry": {
+        "Education": 7,
+        "Transportation": 7,
+        "Finance": 7,
+        "Technology": 6,
+        "Retail": 6,
+        "Manufacturing": 6,
+        "Energy": 5,
+        "Entertainment": 3,
+        "Healthcare": 2,
+        "Telecommunications": 2
+      },
+      "workplace": {
+        "No": 33,
+        "Yes": 18
+      },
+      "automation_risk": {
+        "High": 20,
+        "Medium": 16,
+        "Low": 15
+      },
+      "growth_projection": {
+        "Growth": 20,
+        "Decline": 16,
+        "Stable": 15
+      },
+      "avg_salary": 95583.35,
+      "total_count": 51
+    },
+    "Sales Manager": {
+      "skills": {
+        "Data Analysis": 9,
+        "Cybersecurity": 8,
+        "Project Management": 7,
+        "Machine Learning": 7,
+        "Python": 6,
+        "Sales": 4,
+        "UX/UI Design": 3,
+        "JavaScript": 2,
+        "Marketing": 2,
+        "Communication": 1
+      },
+      "industry": {
+        "Manufacturing": 9,
+        "Finance": 6,
+        "Transportation": 5,
+        "Retail": 5,
+        "Energy": 5,
+        "Telecommunications": 5,
+        "Education": 4,
+        "Healthcare": 4,
+        "Entertainment": 3,
+        "Technology": 3
+      },
+      "workplace": {
+        "Yes": 30,
+        "No": 19
+      },
+      "automation_risk": {
+        "High": 20,
+        "Low": 18,
+        "Medium": 11
+      },
+      "growth_projection": {
+        "Growth": 19,
+        "Decline": 16,
+        "Stable": 14
+      },
+      "avg_salary": 92926.64,
+      "total_count": 49
+    },
+    "UX Designer": {
+      "skills": {
+        "Project Management": 14,
+        "Cybersecurity": 8,
+        "Marketing": 7,
+        "Python": 5,
+        "Data Analysis": 5,
+        "JavaScript": 4,
+        "UX/UI Design": 3,
+        "Communication": 3,
+        "Sales": 3,
+        "Machine Learning": 2
+      },
+      "industry": {
+        "Education": 10,
+        "Retail": 7,
+        "Manufacturing": 7,
+        "Energy": 6,
+        "Healthcare": 5,
+        "Telecommunications": 5,
+        "Technology": 4,
+        "Entertainment": 4,
+        "Transportation": 3,
+        "Finance": 3
+      },
+      "workplace": {
+        "No": 35,
+        "Yes": 19
+      },
+      "automation_risk": {
+        "Medium": 28,
+        "High": 16,
+        "Low": 10
+      },
+      "growth_projection": {
+        "Decline": 21,
+        "Growth": 19,
+        "Stable": 14
+      },
+      "avg_salary": 90157.29,
+      "total_count": 54
+    },
+    "HR Manager": {
+      "skills": {
+        "Machine Learning": 10,
+        "Data Analysis": 7,
+        "Cybersecurity": 6,
+        "Sales": 6,
+        "Project Management": 6,
+        "Marketing": 5,
+        "UX/UI Design": 5,
+        "JavaScript": 5,
+        "Communication": 4,
+        "Python": 3
+      },
+      "industry": {
+        "Finance": 11,
+        "Energy": 7,
+        "Retail": 6,
+        "Manufacturing": 6,
+        "Telecommunications": 6,
+        "Education": 6,
+        "Entertainment": 6,
+        "Technology": 5,
+        "Healthcare": 2,
+        "Transportation": 2
+      },
+      "workplace": {
+        "Yes": 34,
+        "No": 23
+      },
+      "automation_risk": {
+        "Medium": 26,
+        "Low": 16,
+        "High": 15
+      },
+      "growth_projection": {
+        "Decline": 22,
+        "Stable": 21,
+        "Growth": 14
+      },
+      "avg_salary": 89251.78,
+      "total_count": 57
+    },
+    "Product Manager": {
+      "skills": {
+        "Machine Learning": 7,
+        "Project Management": 6,
+        "UX/UI Design": 5,
+        "JavaScript": 5,
+        "Python": 5,
+        "Marketing": 3,
+        "Data Analysis": 2,
+        "Cybersecurity": 2,
+        "Sales": 2,
+        "Communication": 2
+      },
+      "industry": {
+        "Finance": 7,
+        "Education": 5,
+        "Telecommunications": 5,
+        "Technology": 4,
+        "Energy": 4,
+        "Transportation": 4,
+        "Manufacturing": 3,
+        "Entertainment": 3,
+        "Healthcare": 3,
+        "Retail": 1
+      },
+      "workplace": {
+        "Yes": 21,
+        "No": 18
+      },
+      "automation_risk": {
+        "High": 16,
+        "Low": 12,
+        "Medium": 11
+      },
+      "growth_projection": {
+        "Growth": 15,
+        "Stable": 14,
+        "Decline": 10
+      },
+      "avg_salary": 90802.64,
+      "total_count": 39
+    },
+    "Software Engineer": {
+      "skills": {
+        "Machine Learning": 6,
+        "Project Management": 5,
+        "Data Analysis": 5,
+        "Marketing": 5,
+        "UX/UI Design": 4,
+        "Sales": 4,
+        "Communication": 4,
+        "Python": 3,
+        "JavaScript": 3,
+        "Cybersecurity": 2
+      },
+      "industry": {
+        "Telecommunications": 7,
+        "Manufacturing": 6,
+        "Technology": 5,
+        "Transportation": 5,
+        "Retail": 5,
+        "Healthcare": 4,
+        "Entertainment": 3,
+        "Finance": 3,
+        "Education": 2,
+        "Energy": 1
+      },
+      "workplace": {
+        "No": 24,
+        "Yes": 17
+      },
+      "automation_risk": {
+        "High": 15,
+        "Medium": 13,
+        "Low": 13
+      },
+      "growth_projection": {
+        "Growth": 16,
+        "Stable": 13,
+        "Decline": 12
+      },
+      "avg_salary": 84490.54,
+      "total_count": 41
+    },
+    "Data Scientist": {
+      "skills": {
+        "Python": 9,
+        "Cybersecurity": 9,
+        "Sales": 8,
+        "Project Management": 7,
+        "Data Analysis": 7,
+        "Machine Learning": 6,
+        "UX/UI Design": 6,
+        "Marketing": 5,
+        "JavaScript": 3,
+        "Communication": 2
+      },
+      "industry": {
+        "Technology": 10,
+        "Telecommunications": 10,
+        "Education": 8,
+        "Entertainment": 8,
+        "Manufacturing": 6,
+        "Transportation": 5,
+        "Energy": 5,
+        "Finance": 4,
+        "Retail": 3,
+        "Healthcare": 3
+      },
+      "workplace": {
+        "Yes": 34,
+        "No": 28
+      },
+      "automation_risk": {
+        "Low": 25,
+        "Medium": 20,
+        "High": 17
+      },
+      "growth_projection": {
+        "Decline": 23,
+        "Growth": 22,
+        "Stable": 17
+      },
+      "avg_salary": 91480.76,
+      "total_count": 62
+    },
+    "Operations Manager": {
+      "skills": {
+        "UX/UI Design": 6,
+        "Project Management": 5,
+        "Python": 5,
+        "Cybersecurity": 5,
+        "Sales": 5,
+        "JavaScript": 5,
+        "Communication": 5,
+        "Machine Learning": 4,
+        "Data Analysis": 3,
+        "Marketing": 1
+      },
+      "industry": {
+        "Technology": 8,
+        "Entertainment": 6,
+        "Healthcare": 6,
+        "Energy": 5,
+        "Transportation": 4,
+        "Education": 4,
+        "Finance": 4,
+        "Telecommunications": 3,
+        "Manufacturing": 3,
+        "Retail": 1
+      },
+      "workplace": {
+        "No": 25,
+        "Yes": 19
+      },
+      "automation_risk": {
+        "Low": 18,
+        "Medium": 16,
+        "High": 10
+      },
+      "growth_projection": {
+        "Growth": 19,
+        "Stable": 18,
+        "Decline": 7
+      },
+      "avg_salary": 96937.23,
+      "total_count": 44
+    }
+  }
+}

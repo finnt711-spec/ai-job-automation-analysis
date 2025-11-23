@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Job Automation Analysis</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <!-- Landing Page -->
+    <section id="landing-page" class="page active">
+        <div class="container">
+            <div class="hero">
+                <h1 class="main-title">AI & Career Automation</h1>
+                <div class="hypothesis">
+                    <h2>Hypothesis</h2>
+                    <p>The characteristics of a professional career—including required skills, industry sector, and workplace environment—directly influence the level of risk in job automation and replacement by AI services.</p>
+                </div>
+                <div class="methodology">
+                    <h3>Methodology</h3>
+                    <p>This analysis examines 500 job positions across 10 career categories, evaluating automation risk through the lens of three key factors: skill requirements, industry trends, and workplace flexibility. Each career is analyzed to provide insights into market stability and future projections.</p>
+                </div>
+                <button class="cta-button" onclick="showOverview()">Explore the Data →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Page -->
+    <section id="overview-page" class="page">
+        <div class="container">
+            <button class="back-button" onclick="showLanding()">← Back</button>
+            <h2 style="font-size: 2.5rem; margin-bottom: 10px; font-weight: 700; text-align: center;">Current Automation Risk Landscape</h2>
+            <p style="font-size: 1.1rem; color: #888; margin-bottom: 40px; text-align: center;">Distribution of automation risk levels across all analyzed positions</p>
+            <div id="overview-chart" class="chart-container" style="min-height: 380px;"></div>
+            <div class="careers-intro">
+                <h2>Explore Careers</h2>
+                <p>Select a career to view detailed automation risk analysis</p>
+            </div>
+            <div id="career-cards" class="career-grid"></div>
+        </div>
+    </section>
+
+    <!-- Career Detail Page -->
+    <section id="career-page" class="page">
+        <div class="container">
+            <button class="back-button" onclick="showOverview()">← Back to Careers</button>
+            <h2 id="career-title" class="section-title"></h2>
+            
+            <!-- Stats ABOVE the graph -->
+            <div class="career-stats">
+                <div class="stat-card">
+                    <div class="stat-label">Average Salary</div>
+                    <div id="avg-salary" class="stat-value">$0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Dominant Growth</div>
+                    <div id="growth-trend" class="stat-value">-</div>
+                </div>
+            </div>
+
+            <!-- Automation Risk - Title OUTSIDE container -->
+            <h3 style="font-size: 2rem; margin-bottom: 10px; margin-top: 40px;">Automation Risk Overview</h3>
+            <p class="chart-subtitle" style="margin-bottom: 20px;">At Risk vs Low Risk distribution for this career</p>
+            <div id="risk-chart-top" class="chart-container small" style="min-height: 350px; padding: 30px; overflow: visible; margin-bottom: 60px;"></div>
+            
+            <div class="charts-grid">
+                <div class="chart-wrapper">
+                    <h3>Top 3 Required Skills</h3>
+                    <p class="chart-subtitle">Most common skills and their frequency</p>
+                    <div id="skills-chart" class="chart-container small"></div>
+                </div>
+                
+                <div class="chart-wrapper">
+                    <h3>Top 3 Industry Sectors</h3>
+                    <p class="chart-subtitle">Primary industries for this career</p>
+                    <div id="industry-chart" class="chart-container small"></div>
+                </div>
+                
+                <div class="chart-wrapper">
+                    <h3>Workplace Flexibility</h3>
+                    <p class="chart-subtitle">Remote vs on-site positions</p>
+                    <div id="workplace-chart" class="chart-container small"></div>
+                </div>
+            </div>
+
+            <div class="insights">
+                <h3>Key Insights</h3>
+                <div id="insights-content"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
