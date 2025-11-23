@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-primary: #0a0a0a;
+    --bg-secondary: #1a1a1a;
+    --bg-card: #222;
+    --accent-green: #00ff9d;
+    --accent-purple: #bd93f9;
+    --accent-orange: #ff6b6b;
+    --accent-pink: #ff79c6;
+    --accent-blue: #8be9fd;
+    --text-primary: #ffffff;
+    --text-secondary: #b0b0b0;
+    --text-muted: #666;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+/* Page Transitions */
+.page {
+    display: none;
+    min-height: 100vh;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.page.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Landing Page */
+.hero {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.main-title {
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+    background: linear-gradient(135deg, var(--accent-green), var(--accent-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -2px;
+}
+
+.hypothesis {
+    background: var(--bg-secondary);
+    padding: 50px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    border: 1px solid #333;
+}
+
+.hypothesis h2 {
+    color: var(--accent-green);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hypothesis p, .methodology p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.methodology {
+    text-align: left;
+    background: var(--bg-card);
+    padding: 40px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    border-left: 4px solid var(--accent-purple);
+}
+
+.methodology h3 {
+    color: var(--accent-purple);
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-button {
+    background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+    color: var(--bg-primary);
+    border: none;
+    padding: 20px 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 40px rgba(0, 255, 157, 0.3);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 50px rgba(0, 255, 157, 0.5);
+}
+
+/* Back Button */
+.back-button {
+    background: var(--bg-card);
+    color: var(--text-primary);
+    border: 1px solid #444;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    margin-bottom: 40px;
+}
+
+.back-button:hover {
+    background: #333;
+    transform: translateX(-5px);
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 60px;
+}
+
+/* Charts */
+.chart-container {
+    background: var(--bg-secondary);
+    padding: 60px 40px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    border: 1px solid #333;
+    min-height: 600px;
+    display: block;
+    position: relative;
+    overflow: visible !important;
+}
+
+.chart-container svg {
+    overflow: visible !important;
+}
+
+.chart-container.small {
+    padding: 40px;
+    margin-bottom: 0;
+    min-height: auto;
+    overflow: visible !important;
+}
+
+/* Career Cards Grid */
+.careers-intro {
+    text-align: center;
+    margin: 80px 0 40px;
+}
+
+.careers-intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.careers-intro p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.career-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.career-card {
+    background: var(--bg-card);
+    padding: 40px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.career-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-green), var(--accent-purple));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.career-card:hover::before {
+    transform: scaleX(1);
+}
+
+.career-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-green);
+    box-shadow: 0 10px 40px rgba(0, 255, 157, 0.2);
+}
+
+.career-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.career-card .risk-indicator {
+    display: inline-block;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.risk-high { background: rgba(255, 107, 107, 0.2); color: var(--accent-orange); }
+.risk-medium { background: rgba(255, 217, 102, 0.2); color: #ffd966; }
+.risk-low { background: rgba(0, 255, 157, 0.2); color: var(--accent-green); }
+
+/* Career Stats */
+.career-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.stat-card {
+    background: var(--bg-card);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.stat-label {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-green);
+}
+
+/* Charts Grid */
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.chart-wrapper h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: var(--text-primary);
+}
+
+.chart-subtitle {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+/* Insights */
+.insights {
+    background: var(--bg-secondary);
+    padding: 50px;
+    border-radius: 20px;
+    border-left: 4px solid var(--accent-purple);
+}
+
+.insights h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--accent-purple);
+}
+
+#insights-content {
+    display: grid;
+    gap: 20px;
+}
+
+.insight-item {
+    background: var(--bg-card);
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 3px solid var(--accent-green);
+}
+
+.insight-item h4 {
+    color: var(--accent-green);
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.insight-item p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* D3 Chart Styles */
+.bar {
+    transition: all 0.3s ease;
+}
+
+.bar:hover {
+    opacity: 0.8;
+}
+
+.axis text {
+    fill: var(--text-secondary);
+    font-size: 12px;
+}
+
+.axis line, .axis path {
+    stroke: #444;
+}
+
+.chart-label {
+    fill: var(--text-primary);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 3rem;
+    }
+    
+    .container {
+        padding: 40px 20px;
+    }
+    
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .career-grid {
+        grid-template-columns: 1fr;
+    }
+}
